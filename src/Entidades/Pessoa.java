@@ -3,15 +3,15 @@ package Entidades;
 public class Pessoa{
    
     public String nome;
-    public String cpf;
-    public String data_nascimento;
+    public int cpf;
+    public int idade;
     protected String rg;
     protected String nacionalidade;
    
-    public Pessoa (String nome, String cpf, String data_nascimento, String rg, String nacionalidade){
+    public Pessoa (String nome, int cpf, String data_nascimento, String rg, String nacionalidade){
         this.nome = nome;
         this.cpf = cpf;
-        this.data_nascimento = data_nascimento;
+        this.idade = idade;
         this.rg = rg;
         this.nacionalidade = nacionalidade;
     }
@@ -23,18 +23,18 @@ public class Pessoa{
             return this.nome;
          }
 
-         public void setCpf (String novocpf){
+         public void setCpf (int novocpf){
             this.cpf=novocpf;
          }
-         public String getCpf(){
+         public int getCpf(){
             return this.cpf;
          }
 
-         public void setData_nascimento( String novadata){
-            this.data_nascimento=novadata;
+         public void setIdade( int novaidade){
+            this.idade=novaidade;
          }
-         public String getData_nascimento(){
-            return this.data_nascimento;
+         public int getIdade(){
+            return this.idade;
          }
 
          protected void setRg( String novorg){

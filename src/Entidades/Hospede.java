@@ -4,7 +4,7 @@ public class Hospede extends Pessoa {
     private String endereco;
     private String num_celular;
 
-    public Hospede (String nome, String cpf, String data_nascimento, String rg, String nacionalidade, String endereco, String num_celular){
+    public Hospede (String nome, int cpf, String data_nascimento, String rg, String nacionalidade, String endereco, String num_celular){
         super( nome, cpf, data_nascimento, rg, nacionalidade);  
         
         this.endereco = endereco;

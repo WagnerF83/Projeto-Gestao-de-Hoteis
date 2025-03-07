@@ -7,7 +7,7 @@ public class Main{
 
     public static void main( String[] args ){
 
-        Hospede h1 = new Hospede("Paulo", "999.999.999.10", "18/06/2001", "29.523.421-9", "brasileiro", "Rua da paçoca 12", "819876-4562");
+        Hospede h1 = new Hospede("Paulo", 189872109, "18/06/2001", "29.523.421-9", "brasileiro", "Rua da paçoca 12", "819876-4562");
          System.out.println(h1);
 
         Quartos q1 = new Quartos( 5, 2, 9, "Disponível", "Casal");
