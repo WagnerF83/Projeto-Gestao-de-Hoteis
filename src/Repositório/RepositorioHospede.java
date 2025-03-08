@@ -26,4 +26,9 @@ public class RepositorioHospede {
                         System.out.println(hospede);
                 }
         }
+
+        public boolean removerHospede(int iD) {
+                // TODO Auto-generated method stub
+                throw new UnsupportedOperationException("Unimplemented method 'removerHospede'");
+        }
 }

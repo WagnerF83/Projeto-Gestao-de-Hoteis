@@ -5,14 +5,14 @@ public class Quartos{
     public int capacidade; 
     public int num_banheiros; //numero de banheiros
     public int numq; //numero do quarto
-    public String estado; // Disponivel ou ocupado
+    public int qtdatual; // Quantidade de pessoas atualmente no quarto
     protected String tipo; //tipo de quarto(solteiro, casal, suite, etc.)
 
-    public Quartos (int capacidade, int num_banheiros, int numq, String estado, String tipo){
+    public Quartos (int capacidade, int num_banheiros, int numq, int qtdatual, String tipo){
         this.capacidade = capacidade;
         this.num_banheiros = num_banheiros;
         this.numq = numq;
-        this.estado = estado;
+        this.qtdatual = qtdatual;
         this.tipo = tipo;
     }
     
@@ -37,11 +37,11 @@ public class Quartos{
         public int getNumq(){
             return this.numq;
         }
-        public void setEstado( String novoest){
-            this.estado = novoest;
+        public void setQtdatual( int novoqtd){
+            this.qtdatual = novoqtd;
         }
-        public String getEstado(){
-            return this.estado;
+        public int getQtdatual(){
+            return this.qtdatual;
         }
         protected void setTipo( String novotip){
             this.tipo=novotip;

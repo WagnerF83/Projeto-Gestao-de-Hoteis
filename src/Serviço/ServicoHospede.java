@@ -41,5 +41,9 @@ public class ServicoHospede {
         }
         return adicionar;
     }
+
+    public boolean removerHospede(int ID){
+        return repositorio.removerHospede(ID);
+    }
     
 }

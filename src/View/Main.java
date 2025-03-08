@@ -1,19 +1,41 @@
 package View;
+
 import Entidades.Hospede;
 import Entidades.Quartos;
 import Entidades.Reserva;
+import Repositório.RepositorioHospede;
+import Repositório.RepositorioQuartos;
+import Repositório.RepositorioReserva;
+import Serviço.ServicoHospede;
+import Serviço.ServicoQuartos;
+import Serviço.ServicoReserva;
 
 public class Main{
 
     public static void main( String[] args ){
 
-        Hospede h1 = new Hospede("Paulo", 189872109, "18/06/2001", "29.523.421-9", "brasileiro", "Rua da paçoca 12", "819876-4562");
-         System.out.println(h1);
+        RepositorioHospede repositorio = new RepositorioHospede();
+        ServicoHospede servico = new ServicoHospede(repositorio);
+        ArrayList<Hospede> hospede = new ArrayList<>();
 
-        Quartos q1 = new Quartos( 5, 2, 9, "Disponível", "Casal");
-        System.out.println(q1);
+        RepositorioQuartos repositorioqua = new RepositorioQuartos();
+        ServicoQuartos servicoqua = new ServicoQuartos(repositorioqua);
+        ArrayList<Quartos> quarto = new ArrayList<>();
 
-        Reserva r1 = new Reserva(12345, "2025-03-10", "2025-03-15", "Cartão de Crédito", 1500.75f);
-        System.out.println(r1);
-    }
+        RepositorioReserva repositoriore = new RepositorioReserva();
+        ServicoReserva servicore = new ServicoReserva(repositoriore);
+        ArrayList<Reserva> reserva = new ArrayList<>();
+
+        hospede.add(new Hospede("Paulo", 123456779, "19/03/2004", "null", "null", "null", "null"));
+        hospede.add(new Hospede("Carmila", 432234564, "20/07/2002", "null", "null", "null", "null"));
+        servico.validarIdade(hospede);
+        servico.adicionarHospede(hospede);
+        servico.removerHospede(2);
+        repositorio.listaH();
+
+        System.out.println("");
+
+        
+
+}
 }
