@@ -1,1 +1,1 @@
-Projeto acadêmico em Java sobre Gestão_de_Hotéis
+Projeto acadêmico em Java sobre Gestão de Hotéis
